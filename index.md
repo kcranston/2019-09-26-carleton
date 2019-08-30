@@ -1,19 +1,19 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
-carpentry: "FIXME"    # swc  
+carpentry: "swc"    # swc  
                       # Be sure to update the Carpentry type in _config.yml as well.  
-venue: "FIXME"        # Carleton University
-address: "FIXME"      # Senate Room, Room 608 Robertson Hall, Carleton University, 1125 Colonel by Drive, Ottawa, ON, K1S 5B6
-country: "FIXME"      # ca
-language: "FIXME"     # en 
-latlng: "FIXME"       # 45.3830989,-75.6977224
-humandate: "FIXME"    # Sep 26-27, 2019
-humantime: "FIXME"    # 9:00 am - 5:00 pm
-startdate: FIXME      # 2019-09-26
-enddate: FIXME        # 2019-09-27
-instructor: ["FIXME"] # ["Karen Cranston", "Easton White"]
-helper: ["FIXME"]     # ["Josie Hughes", "Sonesinh Keobouasone"]
-email: ["fixme@example.org"]    # ["amanda.martin@canada.ca"]
+venue: "Carleton University"        #
+address: "Senate Room, Room 608 Robertson Hall, Carleton University, 1125 Colonel by Drive, Ottawa, ON, K1S 5B6"      #
+country: "ca"      # ca
+language: "en"     # en
+latlng: "45.3830989,-75.6977224"       # 45.3830989,-75.6977224
+humandate: "Sep 26-27, 2019"    # Sep 26-27, 2019
+humantime: "9:00 am - 5:00 pm"    # 9:00 am - 5:00 pm
+startdate: 2019-09-26      # 2019-09-26
+enddate: 2019-09-27        # 2019-09-27
+instructor: ["Karen Cranston", "Easton White"] #
+helper: ["Josie Hughes", "Sonesinh Keobouasone"]     #
+email: ["amanda.martin@canada.ca"]    # ["amanda.martin@canada.ca"]
 collaborative_notes:             https://pad.carpentries.org/2019-06-26-carleton
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
@@ -37,7 +37,7 @@ For a workshop please delete the following block
 <div class="alert alert-danger">
 This is the workshop template. Delete these lines and use it to customize your
 own website. If you are running a self-organized workshop or have not put in a
-workshop request yet, please also fill in 
+workshop request yet, please also fill in
 <a href="{{site.amy_site}}/submit">this workshop request form</a> to let us know
 about your workshop and our administrator may contact you if we need any extra
 information.
@@ -46,7 +46,7 @@ information.
 {% if page.carpentry != site.carpentry %}
 <div class="alert alert-warning">
 You specified <code>carpentry: {{page.carpentry}}</code> in <code>index.md</code> and
-<code>carpentry: {{site.carpentry}}</code> in <code>_config.yml</code>. Make sure you edit both files. After editing <code>_config.yml</code>, you need to run <code>make serve</code> again to 
+<code>carpentry: {{site.carpentry}}</code> in <code>_config.yml</code>. Make sure you edit both files. After editing <code>_config.yml</code>, you need to run <code>make serve</code> again to
 see the changes take effect locally.
 </div>
 {% endif %}
@@ -201,12 +201,12 @@ Display the contact email address set in the configuration file.
 
 <hr/>
 
-{% comment %} 
-SURVEYS - DO NOT EDIT SURVEY LINKS 
+{% comment %}
+SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endcomment %}
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
-{% if site.carpentry == "swc" %} 
+{% if site.carpentry == "swc" %}
 <p><a href="{{ site.swc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.swc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
 {% elsif site.carpentry == "dc" %}
@@ -359,7 +359,7 @@ please preview your site before committing, and make sure to run
               <li>Click on "Next".</li>
               {% comment %} Choosing HTTPS transport backend {% endcomment %}
               <li>Select "Use the native Windows Secure Channel library", and click "Next".</li>
-              {% comment %} This should mean that people stuck behind corporate firewalls that do MITM attacks 
+              {% comment %} This should mean that people stuck behind corporate firewalls that do MITM attacks
                                  with their own root CA are still able to access remote git repos. {% endcomment %}
               {% comment %} Configuring the line ending conversions {% endcomment %}
               <li>
@@ -462,7 +462,7 @@ please preview your site before committing, and make sure to run
           <a href="http://sourceforge.net/projects/git-osx-installer/files/">this list</a>.
           Because this installer is not signed by the developer, you may have to
           right click (control click) on the .pkg file, click Open, and click
-          Open on the pop up window. 
+          Open on the pop up window.
           After installing Git, there will not be anything in your <code>/Applications</code> folder,
           as Git is a command line program.
           <strong>For older versions of OS X (10.5-10.8)</strong> use the
@@ -491,8 +491,8 @@ please preview your site before committing, and make sure to run
     color-coding of key words. The default text editor on macOS and
     Linux is usually set to Vim, which is not famous for being
     intuitive. If you accidentally find yourself stuck in it, hit
-    the <kbd>Esc</kbd> key, followed by <kbd>:</kbd>+<kbd>Q</kbd>+<kbd>!</kbd> 
-    (colon, lower-case 'q', exclamation mark), then hitting <kbd>Return</kbd> to 
+    the <kbd>Esc</kbd> key, followed by <kbd>:</kbd>+<kbd>Q</kbd>+<kbd>!</kbd>
+    (colon, lower-case 'q', exclamation mark), then hitting <kbd>Return</kbd> to
     return to the shell.
   </p>
 
@@ -671,9 +671,9 @@ please preview your site before committing, and make sure to run
           from <a href="https://cran.r-project.org/index.html">CRAN</a>.
           Also, please install the
           <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
-          Note that if you have separate user and admin accounts, you should run the 
-          installers as administrator (right-click on .exe file and select "Run as 
-          administrator" instead of double-clicking). Otherwise problems may occur later, 
+          Note that if you have separate user and admin accounts, you should run the
+          installers as administrator (right-click on .exe file and select "Run as
+          administrator" instead of double-clicking). Otherwise problems may occur later,
           for example when installing R packages.
         </p>
       </article>
@@ -736,7 +736,7 @@ please preview your site before committing, and make sure to run
           Visit <a href="https://sqlitebrowser.org/dl/">SqliteBrowser</a> and download and install it. Version 3.11.0 or greater.
         </p>
       </article>
-      
+
     </div>
     {%else%}
     <div class="tab-content">
@@ -748,7 +748,7 @@ please preview your site before committing, and make sure to run
             <li>Paste it into the window that git bash opened. If you're unsure, ask an instructor for help</li>
             <li>You should see something like <code>3.27.2 2019-02-25 16:06:06 ...</code></li>
           </ul>
-            
+
           <p>If you want to do this manually, download <a href="https://www.sqlite.org/2019/sqlite-tools-win32-x86-3270200.zip">sqlite3</a>, make a bin directory in the user's home directory, unzip sqlite3, move it into the bin directory, and then add the bin directory to the path.</p>
 
         </p>
